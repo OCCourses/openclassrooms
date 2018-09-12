@@ -1,5 +1,6 @@
 package com.lambazon.controller;
 
+
 import com.lambazon.model.Product;
 import com.lambazon.repository.ProductRepository;
 import com.lambazon.service.ProductService;
@@ -25,7 +26,7 @@ public class ProductController {
     @RequestMapping(path = "/products/add", method = RequestMethod.GET)
     public String createProduct(Model model) {
         model.addAttribute("product", new Product());
-        return "edit";
+        return "edit"; 
     }
     
     @RequestMapping(path = "products", method = RequestMethod.POST)

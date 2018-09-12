@@ -21,20 +21,20 @@ public class DataLoader implements CommandLineRunner {
     public void run(String... strings) throws Exception {
 
         Product product1 = new Product();
-        product1.setName("Milky Bar");
-        product1.setDescription("Milky Bar with chocolate and hazelnut");
-        product1.setType("CANDIES");
-        product1.setCategory("BARS");
-        product1.setPrice(1.99);
+        product1.setName("Bushnell Binocular Bundle");
+        product1.setDescription("Trophy XLT 10x42 Binoculars (Bone Collector Edition) + Deluxe Binocular Harness");
+        product1.setType("Hunting");
+        product1.setCategory("Sports & Outdoors");
+        product1.setPrice(76.99);
 
         productRepository.save(product1);
 
         Product product2 = new Product();
-        product2.setName("Almond Bar");
-        product2.setDescription("Almond Bar with chocolate and honey");
-        product2.setType("CANDIES");
-        product2.setCategory("BARS");
-        product2.setPrice(2.99);
+        product2.setName("Under Armour Men's");
+        product2.setDescription("Original Series 6” Boxerjock, Pack of 2");
+        product2.setType("Clothing");
+        product2.setCategory("Men");
+        product2.setPrice(45.77);
 
         productRepository.save(product2);
     }

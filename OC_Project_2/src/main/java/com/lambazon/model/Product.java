@@ -61,14 +61,19 @@ public class Product {
     }
 
     public void setCategory(String category) {
-        this.category = category;
+        //TODO    	
     }
 
     public Double getPrice() {
         return price;
     }
 
-    public void setPrice(Double price) {
-        this.price = price;
+    public void setPrice(Double price) throws IllegalArgumentException{
+        //TODO waiting to hear back from management on this 
+//    	if (price <= 0.0) {
+//			throw new IllegalArgumentException("Price must be greater than 0.0");
+//		}
+    	
+    	this.price = price;
     }
 }
